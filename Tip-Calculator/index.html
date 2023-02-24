@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <div class="bill-part">
+        <div><label for="bill-input">Bill</label></div>
+        <input type="number" placeholder="0" class="bill-input">
+      </div>
+
+      <div><label class="select-tip-label">Select Tip %</label></div>
+      <div class="tip-part">
+        <label class="label-five tips"><input type="radio" name="samename" class="percent-five">5%</label>
+        <label class="label-ten tips active-tip"><input type="radio" name="samename" class="percent-ten">10%</label>
+        <label class="label-fifteen tips"><input type="radio" name="samename" class="percent-fifteen">15%</label>
+        <label class="label-twentyfive tips"><input type="radio" name="samename"class="percent-twentyfive">25%</label>
+        <label class="label-fifty tips"><input type="radio" name="samename" class="percent-fifty">50%</label>
+        <input type="number" class="percent-custom" placeholder="Custom">
+      </div>
+
+      <div class="people-part">
+        <label class="number-of-people-label">Number of People</label>
+        <input type="number" class="number-of-people-input" placeholder="0">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="tip-per-person">
+        <div class="label-tip-per-person">
+          <p>Tip Amount</p>
+          <p class="per-person-paragraph">/ person</p>
+        </div>
+
+        <div class="result-tip-per-person">
+          <p class="big-price-amount">$0.00</p>
+        </div>
+      </div>
+
+      <div class="total-per-person">
+        <div class="label-total-per-person">
+          <p>Total</p>
+          <p class="per-person-paragraph">/ person</p>
+        </div>
+
+        <div class="result-total-per-person">
+          <p class="big-price-total">$0.00</p>
+        </div>
+      </div>
+      <div class="reset-button">
+        <button class="reset-bttn">RESET</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
